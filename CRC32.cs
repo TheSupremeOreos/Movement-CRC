@@ -1,4 +1,14 @@
-﻿       public static uint calcMapCRC(int mapID)
+﻿/*IDB Methods
+////CField::LoadMap
+//// -> CMapLoadable::LoadMap -> CWvsPhysicalSpace2D::Load -> m_dwCRC
+//// -> CPortalList::RestorePortal  -> m_dwPortalCrc
+*/
+
+
+
+
+
+public static uint calcMapCRC(int mapID)
         {
             uint crc = 0;
             MapleMap map;
@@ -28,7 +38,7 @@
             crc = CalcCRC32(BitConverter.GetBytes(map.fly)) ^ crc;
             crc = CalcCRC32(BitConverter.GetBytes(map.personalShop)) ^ crc;
             crc = CalcCRC32(BitConverter.GetBytes(map.ridingMove)) ^ crc;
-            crc = CalcCRC32(BitConverter.GetBytes(map.forcedReturn)) ^ crc; //ForceField variable?
+            crc = CalcCRC32(BitConverter.GetBytes(map.forcedReturn)) ^ crc; //ForceField variable? Unsure
             crc = CalcCRC32(BitConverter.GetBytes(map.forceJump)) ^ crc; //ForceField.njump
             return crc;
         }
@@ -86,7 +96,7 @@
                 dwCrc = CalcCRC32(BitConverter.GetBytes(f.getNext())) ^ dwCrc;
                 dwCrc = CalcCRC32(BitConverter.GetBytes(f.getId())) ^ dwCrc;
             }
-            if (map.ladderRope.Count > 0) //THIS PART IS for sure
+            if (map.ladderRope.Count > 0) //THIS PART IS PROLLY WRONG for sure
             {
                 List<LadderRope> ladderRope = map.ladderRope;
                 foreach (LadderRope props in ladderRope)
