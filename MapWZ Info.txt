@@ -18,8 +18,24 @@ Info:
 Back:
 , bS, front, ani, no, f, x, y, rx, ry, type, cx, cy, a, backTags, w, wx, wy, spineAni, spineRandomStart, nameTW, screenMode, notUse
 ---------------------------
-OK   
----------------------------
+
+
+B0 // Version 176 
+80 7F 3D 36 // 910000000 FM Entrance
+01 53 AD 66 // Map CRC // 1722635009
+
+B0 // Version 176 
+01 1C 4E 0E // 240000001 Leafre Chief's House
+01 9D 8C 00 // Map CRC 9215233
+
+B0 // Version 176 
+00 1C 4E 0E //240000000 Leafre
+01 DF AA 9E // Real MAP CRC 2661998337
+
+
+
+
+
 
 
 PORTAL CRC = CRC32 STRING PN
