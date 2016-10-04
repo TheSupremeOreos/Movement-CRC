@@ -42,7 +42,7 @@ private static uint mapCRC(MapleMap map, uint currentcrc)
     crc = CalcCRC32(BitConverter.GetBytes(map.fly)) ^ crc;
     crc = CalcCRC32(BitConverter.GetBytes(map.personalShop)) ^ crc;
     crc = CalcCRC32(BitConverter.GetBytes(map.ridingMove)) ^ crc;
-    crc = CalcCRC32(BitConverter.GetBytes(0)) ^ crc;
+    crc = CalcCRC32(BitConverter.GetBytes(0)) ^ crc; //fieldForce??? 
     crc = CalcCRC32(BitConverter.GetBytes(map.forceJump)) ^ crc;
     return crc;
 }
@@ -66,13 +66,13 @@ private static uint CPortalListRestorePortalCRC(MapleMap map, int mapID)
         byte[] xyCoord = combineArrays(BitConverter.GetBytes((int)p.X), BitConverter.GetBytes(((int)p.Y)));
         byte[] onlyOnce = new byte[] { (byte)p.onlyOnce };
 
-        dwPortalCrc = CalcCRC32String(p.pn, map.wzIV) ^ dwPortalCrc;
+        dwPortalCrc = CalcCRC32String(p.pn) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(BitConverter.GetBytes(p.pt)) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(xyCoord) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(BitConverter.GetBytes(p.hRange)) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(BitConverter.GetBytes(p.VRange)) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(BitConverter.GetBytes(p.tm)) ^ dwPortalCrc;
-        dwPortalCrc = CalcCRC32String(p.tn, map.wzIV) ^ dwPortalCrc;
+        dwPortalCrc = CalcCRC32String(p.tn) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(BitConverter.GetBytes(p.delay)) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(onlyOnce) ^ dwPortalCrc;
         dwPortalCrc = CalcCRC32(BitConverter.GetBytes(p.verticalImpact)) ^ dwPortalCrc;
