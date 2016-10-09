@@ -1,23 +1,27 @@
 ---------------------------
-
+All Map WZ Variables
 ---------------------------
 Info:
-, version, cloud, town, swim, returnMap, forcedReturn, mobRate, bgm, mapMark, hideMinimap, fieldLimit, fly, standAlone, partyStandAlone, noMapCmd, fieldScript, onFirstUserEnter, onUserEnter, noChair, moveLimit, VRTop, VRLeft, VRBottom, VRRight, mapDesc, LBSide, LBTop, LBBottom, fieldType, link, timeLimit, limitSpeedAndJump, allowedItem, dropExpire, lvLimit, recovery, decHP, fs, autoLieDetector, miniMapOnOff, decInterval, expeditionOnly, quarterView, remoteEffect, isFixDec, decHPr, isDecView, largeSplit, streetName, mapName, bgmSub, consumeItemCoolTime, timeMob, help, needSkillForFly, taggedObjRegenInfo, forceFadeInTime, forceFadeOutTime, ridingMove, noLanding, noCancelSkill, ridingField, limitUseShop, barrier, partyOnly, protectItem, effect, partyBonusR, reviveCurField, everlast, defaultAvatarDir, bossMobID, isSpecialMoveCheck, maxDeathCount, VRLimit, forceJump, forceSpeed, scrollDisable, allMoveCheck, nofollowCharacter, zakum2Hack, zeroSideOnly, specialSound, fixedMobCapacity, phase, boss, difficulty, StarPlanet, usableQuarterViewRiding, EscortMinTime, offSoulAbsorption, footStepSound, inFieldsetForcedReturn, chaser, chaserEndTime, chaserEffect, cagePotal, cageLT, cageRB, chaserHoldTime, zoomOutField, actionBarIdx, shadowzone, functionObjInfo, whiteOut, UserInvisible, respawnCooltimeField, specialDeadAction, limitUserEffectField, forcedScreenMode, typingGame, limitOnOffEquip, FriendsStoryBossDelay, deathCount, fieldSubType, decMP, protectSetKey, decRate, escort, phaseAlpha, phaseBG, fieldLimit_tw, createMobInterval, noRegenMap, reactorShuffle, personalShop, climb, DefenceMode, loginReturn, largeSplt, isHideUI, limitUseTrunk, PartyOnly, soulFieldType, limitUI, freeFallingVX, midAirAccelVX, midAirDecelVX, jumpSpeedR, jumpAccUpKey, jumpAccDownKey, jumpApplyVX, dashSkill, speedMaxOver, forceUseIndie, userTimer, remoteTranslucenceView, entrustedShop, blockPBossChange, lifeCount, potionLimit, scale, playTime, resetRidingField, teamPortal, forceReturnOnDead, lvForceMove, cameraMoveY, incMPr, incInterval, lt, rb, fieldAttackObj, timeLeft, reactorShuffleName, bindSkillLimit, bonusExpPerUserHPRate, skills, noEvent, forParty, rewardContentName, subType, OnFirstUserEnter, eventSummon, rankCheckMob, questCheckMob, towerChairEnable, timeout
+version, cloud, town, swim, returnMap, forcedReturn, mobRate, bgm, mapMark, hideMinimap, fieldLimit, fly, standAlone, partyStandAlone, noMapCmd, fieldScript, onFirstUserEnter, onUserEnter, noChair, moveLimit, VRTop, VRLeft, VRBottom, VRRight, mapDesc, LBSide, LBTop, LBBottom, fieldType, link, timeLimit, limitSpeedAndJump, allowedItem, dropExpire, lvLimit, recovery, decHP, fs, autoLieDetector, miniMapOnOff, decInterval, expeditionOnly, quarterView, remoteEffect, isFixDec, decHPr, isDecView, largeSplit, streetName, mapName, bgmSub, consumeItemCoolTime, timeMob, help, needSkillForFly, taggedObjRegenInfo, forceFadeInTime, forceFadeOutTime, ridingMove, noLanding, noCancelSkill, ridingField, limitUseShop, barrier, partyOnly, protectItem, effect, partyBonusR, reviveCurField, everlast, defaultAvatarDir, bossMobID, isSpecialMoveCheck, maxDeathCount, VRLimit, forceJump, forceSpeed, scrollDisable, allMoveCheck, nofollowCharacter, zakum2Hack, zeroSideOnly, specialSound, fixedMobCapacity, phase, boss, difficulty, StarPlanet, usableQuarterViewRiding, EscortMinTime, offSoulAbsorption, footStepSound, inFieldsetForcedReturn, chaser, chaserEndTime, chaserEffect, cagePotal, cageLT, cageRB, chaserHoldTime, zoomOutField, actionBarIdx, shadowzone, functionObjInfo, whiteOut, UserInvisible, respawnCooltimeField, specialDeadAction, limitUserEffectField, forcedScreenMode, typingGame, limitOnOffEquip, FriendsStoryBossDelay, deathCount, fieldSubType, decMP, protectSetKey, decRate, escort, phaseAlpha, phaseBG, fieldLimit_tw, createMobInterval, noRegenMap, reactorShuffle, personalShop, climb, DefenceMode, loginReturn, largeSplt, isHideUI, limitUseTrunk, PartyOnly, soulFieldType, limitUI, freeFallingVX, midAirAccelVX, midAirDecelVX, jumpSpeedR, jumpAccUpKey, jumpAccDownKey, jumpApplyVX, dashSkill, speedMaxOver, forceUseIndie, userTimer, remoteTranslucenceView, entrustedShop, blockPBossChange, lifeCount, potionLimit, scale, playTime, resetRidingField, teamPortal, forceReturnOnDead, lvForceMove, cameraMoveY, incMPr, incInterval, lt, rb, fieldAttackObj, timeLeft, reactorShuffleName, bindSkillLimit, bonusExpPerUserHPRate, skills, noEvent, forParty, rewardContentName, subType, OnFirstUserEnter, eventSummon, rankCheckMob, questCheckMob, towerChairEnable, timeout
 
 
 Foothold:
-, x1, y1, x2, y2, prev, next, piece, forbidFallDown, force, cantThrough, drag
+x1, y1, x2, y2, prev, next, piece, forbidFallDown, force, cantThrough, drag
 
 LadderRope:
-, l, uf, x, y1, y2, page, piece, mouseOnlyEU, hideEU
+l, uf, x, y1, y2, page, piece, mouseOnlyEU, hideEU
+//Most Common: l, page, uf, x, y1, y2
 //dwSN? bLadder, bUpperFoothold, x, y1, y2, nPage, bOff?
 
+
 Portal:
-, pn, pt, x, y, tm, tn, horizontalImpact, script, hideTooltip, onlyOnce, delay, shownAtMinimap, image, verticalImpact, reactorName, sessionValueKey, sessionValue, hRange, vRange, overlap, f, enchantPortal, groupName, fadeName, fadeType, sideType, 2, teleport, teamStartPoint
+pn, pt, x, y, tm, tn, horizontalImpact, script, hideTooltip, onlyOnce, delay, shownAtMinimap, image, verticalImpact, reactorName, sessionValueKey, sessionValue, hRange, vRange, overlap, f, enchantPortal, groupName, fadeName, fadeType, sideType, 2, teleport, teamStartPoint
 
 Back:
-, bS, front, ani, no, f, x, y, rx, ry, type, cx, cy, a, backTags, w, wx, wy, spineAni, spineRandomStart, nameTW, screenMode, notUse
+bS, front, ani, no, f, x, y, rx, ry, type, cx, cy, a, backTags, w, wx, wy, spineAni, spineRandomStart, nameTW, screenMode, notUse
 ---------------------------
+
+
 
 
 B0 // Version 176 
@@ -33,9 +37,12 @@ B0 // Version 176
 01 DF AA 9E // Real MAP CRC 2661998337
 
 
+B0 // Version 176 
+45 3E 90 37 //932200005 Flag Race : Night Snowfield: Waiting Area
+27 3F B1 D0 // Real MAP CRC 3501276967
 
 
-
+m_dwField //map ID?
 
 
 PORTAL CRC = CRC32 STRING PN
@@ -46,7 +53,7 @@ XOR VRange
 xor TM
 XOR TN CRC32 STRING
 XOR delay
-XOR onlyONCE
+XOR onlyONCE //1 Byte
 XOR verticalaImpact
 XOR horizontalImpact
 
@@ -60,16 +67,16 @@ drag
 force
 forbidFallDown
 cantThrough
-dwSNPrev
-dwSNNext
-dwSN
+dwSNPrev //Prev
+dwSNNext // Next
+dwSN //ID?
 
 
 LadderRopeCRC 
-v189 = l
-pData = uf
-x = xMax
+v189 = ID?
+pData = l
+x = uf?
 dwSNPrev = y1
 dwSNNext = y2
-cantThrough = page
-forbidFallDown = piece
+cantThrough = x
+forbidFallDown = page
